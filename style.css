@@ -7,12 +7,12 @@ body {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    padding: 0;
+   padding: 0;
     height: 50px;
-    background-color: #e2dfdf;
+   background-color: #e2dfdf;
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
     text-decoration: solid;
@@ -35,6 +35,10 @@ nav ul {
     text-decoration: none;
     color: #0d0d0d;
     text-shadow: #020202 1px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
   }
   
   .picture-box {
@@ -47,14 +51,23 @@ nav ul {
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
   }
+  .picture-box img:hover{
+    opacity: 0.5;
+  }
 
+  .text-box{
+    background-color: #e2dfdf;
+  }
+  .text-box:hover{
+    opacity: 0.5;
+  }
   
   footer {
     font-family: fantasy;
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
+  left: 0;
+    width: 100vw;
     text-align: center;
     background-color: #e2dfdf;
     border-radius: 4px 4px;
