@@ -30,7 +30,9 @@ nav ul {
     display: flex;
     justify-content: center;
   }
-  
+  a:hover{
+    text-decoration: underline;
+  }
   a {
     text-decoration: none;
     color: #0d0d0d;
@@ -47,7 +49,7 @@ nav ul {
   }
   
   .picture-box img {
-    width: 75vw;
+    width: 65vw;
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
   }
@@ -57,9 +59,16 @@ nav ul {
 
   .text-box{
     background-color: #e2dfdf;
+    border-radius: 4px 4px;
+    box-shadow: 5px 5px 15px red;
   }
   .text-box:hover{
     opacity: 0.5;
+  }
+
+  #portfolio-body{
+    background-image: url(assets/workinprogress.jpg);
+    
   }
   
   footer {
@@ -73,4 +82,8 @@ nav ul {
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
     text-decoration: solid;
+  }
+
+  @media screen and (width) {
+    
   }
