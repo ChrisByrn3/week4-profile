@@ -115,15 +115,12 @@ justify-content: space-around;
     }
     
   .picture-box img{
+border: 10em;
     width: 35vw;
     height: 40vw;
   }
 
   .text-box{
-    display: flex;
-    flex-direction: column;
-/*justify-self: flex-end;*/
-width:30%;
-max-height: 40%;
+    margin-left: 2rem;
   }
   }
