@@ -122,5 +122,6 @@ border: 10em;
 
   .text-box{
     margin-left: 2rem;
+    max-height: 450px;
   }
   }
