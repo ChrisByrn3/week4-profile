@@ -9,7 +9,7 @@ main{
   height: 80%;
   display: grid;
   grid-template-columns: [first] 16% [line2] 16% [line3] auto [line4] auto [line5] 16% [line6] 16% [last];
-  grid-template-rows: [first] 15% [line2] 15% [line3] 2em [line4] 40% [line5] 25% [line6] auto [last];
+  grid-template-rows: [first] 15% [line2] 15% [line3] 1em [line4] 25% [line5] auto [line6] 25% [last];
 }
 
 nav ul {
@@ -27,11 +27,7 @@ nav ul {
    
   }
 
-  #h1 {
-    display: flex;
- flex-direction: row;
- justify-content: flex-start;
-  }
+
   
   li {
     list-style: none;
@@ -55,6 +51,8 @@ nav ul {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: first;
+    grid-row-end: 2;
   }
   
   .picture-box img {
@@ -77,6 +75,7 @@ nav ul {
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
     padding: 1rem;
+    margin-bottom: 2rem;
     
   }
   .text-box:hover{
