@@ -8,7 +8,7 @@ main{
   height: 80%;
   display: grid;
   grid-template-columns: [first] 16% [line2] 16% [line3] auto [line4] auto [line5] 16% [line6] 16% [last];
-  grid-template-rows: [first] 15% [line2] 15% [line3] 1rem [line4] 40% [line5] 25% [line6] auto [last];
+  grid-template-rows: [first] 15% [line2] 15% [line3] 2em [line4] 40% [line5] 25% [line6] auto [last];
 }
 
 nav ul {
@@ -22,7 +22,7 @@ nav ul {
    background-color: #e2dfdf;
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
-    text-decoration: solid;
+    font-weight: bold;
    
   }
 
@@ -76,7 +76,7 @@ nav ul {
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
     padding: 1rem;
-    justify-self: baseline;
+    
   }
   .text-box:hover{
     opacity: 0.5;
@@ -84,9 +84,11 @@ nav ul {
 
   #portfolio-body{
     background-image: url(assets/workinprogress.jpg);
+    background-size: 100% 100%;
+    background-repeat: round;
     
   }
-  
+
   footer {
     font-family: fantasy;
     position: fixed;
