@@ -4,10 +4,17 @@ body {
     
 }
 
+main{
+  height: 80%;
+  display: grid;
+  grid-template-columns: [first] 16% [line2] 16% [line3] auto [line4] auto [line5] 16% [line6] 16% [last];
+  grid-template-rows: [first] 15% [line2] 15% [line3] 1rem [line4] 40% [line5] 25% [line6] auto [last];
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
    padding: 0;
@@ -44,11 +51,13 @@ nav ul {
   }
   
   .picture-box {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
   
   .picture-box img {
+    max-height: 70%;
     width: 65vw;
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
@@ -58,9 +67,16 @@ nav ul {
   }
 
   .text-box{
+    display: grid;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
     background-color: #e2dfdf;
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
+    padding: 1rem;
+    justify-self: baseline;
   }
   .text-box:hover{
     opacity: 0.5;
@@ -84,6 +100,27 @@ nav ul {
     text-decoration: solid;
   }
 
-  @media screen and (width) {
+  @media screen and (min-width: 500px) {
+    main{
+display: flex;
+justify-content: space-around;
+    }
+
+    nav ul{
+      justify-content: space-around;
+      height: 100px;
+    }
     
+  .picture-box img{
+    width: 35vw;
+    height: 40vw;
+  }
+
+  .text-box{
+    display: flex;
+    flex-direction: column;
+/*justify-self: flex-end;*/
+width:30%;
+max-height: 40%;
+  }
   }
