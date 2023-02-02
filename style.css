@@ -9,7 +9,7 @@ main{
   height: 80%;
   display: grid;
   grid-template-columns: [first] 16% [line2] 16% [line3] auto [line4] auto [line5] 16% [line6] 16% [last];
-  grid-template-rows: [first] 15% [line2] 15% [line3] 1em [line4] 25% [line5] auto [line6] 25% [last];
+  grid-template-rows: [first] 15% [line2] 10% [line3] 1% [line4] 25% [line5] 26% [line6] 25% [last];
 }
 
 nav ul {
@@ -56,7 +56,9 @@ nav ul {
   }
   
   .picture-box img {
-    max-height: 70%;
+    aspect-ratio: 1/1.5;
+    min-height: 150%;
+    max-height: 80%;
     width: 65vw;
     border-radius: 4px 4px;
     box-shadow: 5px 5px 15px red;
@@ -76,7 +78,7 @@ nav ul {
     box-shadow: 5px 5px 15px red;
     padding: 1rem;
     margin-bottom: 2rem;
-    
+    overflow: hidden;
   }
   .text-box:hover{
     opacity: 0.5;
@@ -116,7 +118,8 @@ justify-content: space-around;
   .picture-box img{
 border: 10em;
     width: 35vw;
-    height: 40vw;
+    min-height: 50%;
+    max-height: 40%;
   }
 
   .text-box{
